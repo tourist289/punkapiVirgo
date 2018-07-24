@@ -1,0 +1,90 @@
+<!doctype html>
+<!--<html lang="ru">-->
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+
+	<title>Title</title>
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+	<link rel="stylesheet" href="styles/css/mainMin.css">
+
+	<script src="js/scripts.min.js"></script>
+	<script src="js/common.js"></script>
+
+</head>
+
+<body>
+
+	<main>
+		<div class='container'>
+			<section class="filter__block">
+				<h5>Filters:</h5>
+				<div class="dropdown" data-filter='name'>
+					<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						name
+					</button>
+					<div class="dropdown-menu" data-filter='name' aria-labelledby="dropdownMenuButton">
+						<span class="dropdown-item">a - z</span>
+						<span class="dropdown-item">z - a</span>
+					</div>
+				</div>
+				<div class="dropdown" >
+					<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						abv
+					</button>
+					<div class="dropdown-menu" data-filter='abv' aria-labelledby="dropdownMenuButton">
+						<span class="dropdown-item">< 4.5</span>
+						<span class="dropdown-item">> 4.5 </span>
+					</div>
+				</div>
+				<button class="btn btn-danger js-clear">
+					clear
+				</button>
+
+
+				<!--<script>-->
+                    <!--$(document).ready(function(){-->
+                        <!--$("#myInput").on("keyup", function() {-->
+                            <!--var value = $(this).val().toLowerCase();-->
+                            <!--$("#myTable tr").filter(function() {-->
+                                <!--$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)-->
+                            <!--});-->
+                        <!--});-->
+                    <!--});-->
+				<!--</script>-->
+
+
+			</section>
+			<section class="row  drinks" >  </section>
+		</div>
+	</main>
+
+	<footer>
+		<!-- MODAL SECTION -->
+		<div id="myModal" class="modal__wrap ">
+			<span class="js-modal__close modal__close closeModalIcon"></span>
+			<section class="modal__content"></section>
+		</div>
+		<!-- MODAL SECTION END -->
+	</footer>
+</body>
+</html>

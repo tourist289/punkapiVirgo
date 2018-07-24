@@ -1,0 +1,65 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+  .modal
+    &__wrap
+      width:  70%
+      padding: 20px
+    &__content
+      display: flex
+      flex-direction: row
+      align-items: center
+      > *
+        margin-bottom: 10px
+      .card
+        flex-wrap: wrap
+        border: none
+        padding: 10px
+        justify-content: center
+        h5
+          text-align: center
+@media only screen and (max-width : 576px)
+  .filter__block
+    width: 90%
+    margin: 0 auto 10px
+    h5
+      display: block
+      width: 100%
+      margin-bottom: 5px
+  .beers
+    justify-content: center
+    .item
+      width: 70%
+
+  .modal
+    &__wrap
+      width:  90%
+      padding: 20px 15px
+      .card-body
+        padding: 0
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+  .beers
+    .item
+      width: 90%
+
+
+/*  iPad Portrait */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait)
+	/**/
+
+/*  iPad Landscape */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape)
+	/**/
